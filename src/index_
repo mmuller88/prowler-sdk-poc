@@ -1,0 +1,26 @@
+import { GetBucketPolicyCommand, ListBucketsCommand, S3Client } from '@aws-sdk/client-s3';
+
+const client = new S3Client({ region: 'us-east-1' });
+
+export const handler = async () => {
+  const bucketList = await client.send(new ListBucketsCommand({}));
+
+
+  for (var bucket of bucketList.Buckets ?? []) {
+    try {
+      const policyStatus = await client.send(new GetBucketPolicyCommand({
+        Bucket: bucket.Name,
+      }));
+      console.log(`bucketName=${bucket.Name}`);
+      console.log(`policyStatus=${policyStatus.Policy}`);
+
+      if (JSON.parse(policyStatus.Policy || '').IsPublic == true) {
+        return 'failed';
+      }
+    } catch (error) {
+      // ignore errors like not existing bucket policy for now
+    }
+  }
+
+  return 'ok';
+};
