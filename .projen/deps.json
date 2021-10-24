@@ -85,6 +85,11 @@
       "type": "build"
     },
     {
+      "name": "@types/node",
+      "version": "14.17.0",
+      "type": "bundled"
+    },
+    {
       "name": "aws-sdk",
       "type": "bundled"
     },

@@ -23,7 +23,7 @@ const project = new JsiiProject({
   // devDeps: [
   //   'jsii-release',
   // ],
-  bundledDeps: deps,
+  bundledDeps: [...deps, '@types/node@14.17.0'],
   // projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   // publishToMaven: {
   //   javaPackage: 'com.github.mmuller88.prowlerSdkPoc',
