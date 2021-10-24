@@ -17,6 +17,7 @@ const project = new JsiiProject({
   defaultReleaseBranch: 'main',
   name: 'prowler-sdk-poc',
   repositoryUrl: 'https://github.com/mmuller88/prowler-sdk-poc',
+  buildWorkflow: false,
 
   deps: deps,
   // devDeps: deps,
