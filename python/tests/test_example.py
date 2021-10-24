@@ -1,19 +1,20 @@
 import pytest
 
-from prowler_sdk_poc.example import hello
+from poc.example import hello
+import prowler_sdk_poc as prowler
 
-@pytest.mark.parametrize(
-    ("name", "expected"),
-    [
-        ("A. Musing", "Hello A. Musing!"),
-        ("traveler", "Hello traveler!"),
-        ("projen developer", "Hello projen developer!"),
-    ],
-)
-def test_hello(name, expected):
-    """Example test with parametrization."""
-    assert hello(name) == expected
+# @pytest.mark.parametrize(
+#     ("name", "expected"),
+#     [
+#         ("A. Musing", "Hello A. Musing!"),
+#         ("traveler", "Hello traveler!"),
+#         ("projen developer", "Hello projen developer!"),
+#     ],
+# )
+# def test_hello(name, expected):
+#     """Example test with parametrization."""
+#     assert hello(name) == expected
 
-def test_hello(name, expected):
+def test_check73():
     """check 73"""
-    assert handler() == expected
+    prowler.Chek73Props

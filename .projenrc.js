@@ -57,11 +57,11 @@ project.synth();
 const py = new python.PythonProject({
   authorEmail: 'damadden88@googlemail.com',
   authorName: 'Martin Mueller',
-  moduleName: 'prowler_sdk_poc',
-  name: 'prowler_sdk_poc',
+  moduleName: 'poc',
+  name: 'poc',
   version: '0.1.0',
   outdir: 'python',
-
+  deps: ['prowler-sdk-poc'],
   // deps: [],                          /* List of runtime dependencies for this project. */
   // description: undefined,            /* A short description of the package. */
   // devDeps: [],                       /* List of dev dependencies for this project. */
