@@ -72,4 +72,5 @@ const py = new python.PythonProject({
   // setuptools: undefined,             /* Use setuptools with a setup.py script for packaging and publishing. */
   // venv: true,                        /* Use venv to manage a virtual environment for installing dependencies inside. */
 });
+py.gitignore.exclude('.env');
 py.synth();
