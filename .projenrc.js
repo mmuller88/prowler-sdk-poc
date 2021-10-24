@@ -1,4 +1,4 @@
-const { JsiiProject } = require('projen');
+const { JsiiProject, python } = require('projen');
 
 // const deps = [
 //   '@aws-sdk/client-s3@3.38.0',
@@ -52,3 +52,23 @@ const project = new JsiiProject({
   ],
 });
 project.synth();
+
+// const py = new python.PythonProject({
+//   authorEmail: 'damadden88@googlemail.com',
+//   authorName: 'Martin Mueller',
+//   moduleName: 'prowler_sdk_poc',
+//   name: 'prowler_sdk_poc',
+//   version: '0.1.0',
+//   outdir: 'python',
+
+//   // deps: [],                          /* List of runtime dependencies for this project. */
+//   // description: undefined,            /* A short description of the package. */
+//   // devDeps: [],                       /* List of dev dependencies for this project. */
+//   // pip: true,                         /* Use pip with a requirements.txt file to track project dependencies. */
+//   // poetry: false,                     /* Use poetry to manage your project dependencies, virtual environment, and (optional) packaging/publishing. */
+//   // projectType: ProjectType.UNKNOWN,  /* Which type of project this is (library/app). */
+//   // pytest: true,                      /* Include pytest tests. */
+//   // setuptools: undefined,             /* Use setuptools with a setup.py script for packaging and publishing. */
+//   // venv: true,                        /* Use venv to manage a virtual environment for installing dependencies inside. */
+// });
+// py.synth();
