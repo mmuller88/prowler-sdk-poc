@@ -2,8 +2,8 @@ import * as AWS from 'aws-sdk';
 
 const client = new AWS.S3({ region: 'eu-central-1' });
 
-interface Chek73Props {
-  whiteListedBucketNames?: string[];
+export interface Chek73Props {
+  readonly whiteListedBucketNames?: string[];
 }
 
 export const handler = async (props?: Chek73Props) => {
