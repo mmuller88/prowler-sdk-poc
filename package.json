@@ -112,12 +112,9 @@
   "jsii": {
     "outdir": "dist",
     "targets": {
-      "java": {
-        "package": "com.github.mmuller88.prowlerSdkPoc",
-        "maven": {
-          "groupId": "com.github.mmuller88",
-          "artifactId": "prowler-sdk-poc"
-        }
+      "python": {
+        "distName": "prowler-sdk-poc",
+        "module": "prowler_sdk_poc"
       },
       "dotnet": {
         "namespace": "com.github.mmuller88",

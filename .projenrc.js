@@ -25,11 +25,11 @@ const project = new JsiiProject({
   // ],
   bundledDeps: deps,
   // projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
-  publishToMaven: {
-    javaPackage: 'com.github.mmuller88.prowlerSdkPoc',
-    mavenGroupId: 'com.github.mmuller88',
-    mavenArtifactId: 'prowler-sdk-poc',
-  },
+  // publishToMaven: {
+  //   javaPackage: 'com.github.mmuller88.prowlerSdkPoc',
+  //   mavenGroupId: 'com.github.mmuller88',
+  //   mavenArtifactId: 'prowler-sdk-poc',
+  // },
   jestOptions: {
     jestConfig: {
       testTimeout: 500 * 1000,
@@ -39,7 +39,7 @@ const project = new JsiiProject({
     dotNetNamespace: 'com.github.mmuller88',
     packageId: 'com.github.mmuller88.ProwlerSdkPoc',
   },
-  publishToPyPi: {
+  python: {
     distName: 'prowler-sdk-poc',
     module: 'prowler_sdk_poc',
   },
