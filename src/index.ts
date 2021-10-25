@@ -12,7 +12,7 @@ export class Check73 {
     this.props = props;
   }
 
-  async doCheck() {
+  public async doCheck() {
     const bucketList = await client.listBuckets().promise();
 
     for (let bucket of bucketList.Buckets ?? []) {

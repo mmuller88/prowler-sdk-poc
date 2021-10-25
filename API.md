@@ -23,5 +23,44 @@ public readonly whiteListedBucketNames: string[];
 
 ---
 
+## Classes <a name="Classes"></a>
+
+### Check73 <a name="prowler-sdk-poc.Check73"></a>
+
+#### Initializers <a name="prowler-sdk-poc.Check73.Initializer"></a>
+
+```typescript
+import { Check73 } from 'prowler-sdk-poc'
+
+new Check73(props?: Chek73Props)
+```
+
+##### `props`<sup>Optional</sup> <a name="prowler-sdk-poc.Check73.parameter.props"></a>
+
+- *Type:* [`prowler-sdk-poc.Chek73Props`](#prowler-sdk-poc.Chek73Props)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `doCheck` <a name="prowler-sdk-poc.Check73.doCheck"></a>
+
+```typescript
+public doCheck()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `props`<sup>Optional</sup> <a name="prowler-sdk-poc.Check73.property.props"></a>
+
+```typescript
+public readonly props: Chek73Props;
+```
+
+- *Type:* [`prowler-sdk-poc.Chek73Props`](#prowler-sdk-poc.Chek73Props)
+
+---
+
 
 
